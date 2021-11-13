@@ -1,0 +1,98 @@
+/*
+Theme Name: Criando um Menu
+Author: Guilherme Gonçalves
+Version: 1.0
+ 
+--------------------------------------------
+SUGESTÃO DE ESTRUTURAÇÃO BASE 
+--------------------------------------------
+**** RESET
+**** DECLARAÇÃO DE VARIÁVEIS
+**** BODY
+**** TOPO
+
+
+font-family: 'Roboto', sans-serif;
+*/
+
+
+/* 
+*** RESET
+*/
+html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, ol, nav, header{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+}
+
+/* 
+*** DECLARANDO VARIÁVEIS
+ */
+
+:root{
+    --principal-bg-color: #F6F6F6;
+    --menu-bg-color: #5EFFCF;
+    --principal-menufont-color: #3F2F2F;
+    --hover-menufont-color: #E10000;
+}
+
+/* 
+*** BODY
+*/
+
+body{
+    background-color: var(--principal-bg-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* 
+*** TOPO
+ */
+
+ header{
+     height: 100px;
+     background-color: var(--menu-bg-color);
+ }
+
+ header .titulo{
+     padding: 25px 50px;
+     display: inline-block;
+ }
+
+ header .titulo .logo{
+    width: 50px;
+    float: left;
+ }
+
+ header .titulo .nome{
+     display: inline-block;
+     margin: 5px 25px;
+     font-size: 2.5rem;
+ }
+
+ header .menu{
+     float: right;
+ }
+
+ header .menu .lista{
+     margin: 45px 25px;
+ }
+
+ header .menu .lista li{
+     display: inline;
+     margin: 0 25px;
+     font-weight: bold;
+ }
+
+ header .menu .lista li > a{
+    color: var(--principal-menufont-color);
+    text-decoration: none;
+    transition: ease-in-out 300ms;
+ }
+
+ header .menu .lista li > a:hover{
+    color: var(--hover-menufont-color);
+    text-decoration: underline;
+ }
